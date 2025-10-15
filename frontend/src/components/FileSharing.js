@@ -125,7 +125,7 @@ function FileSharing({ showMessage }) {
           </button>
         </div>
         <p style={{ fontSize: '12px', color: '#666', margin: '5px 0 0 0' }}>
-          Allowed types: txt, pdf, png, jpg, jpeg, gif, doc, docx, zip, rar (Max: 16MB)
+          Allowed types: txt, pdf, png, jpg, jpeg, gif, doc, docx, zip, rar... (Max: 16GB)
         </p>
       </div>
 
