@@ -14,7 +14,7 @@ UPLOAD_FOLDER = 'uploads'
 TEXT_FOLDER = 'texts'
 MAX_FILE_SIZE = 16 * 1024 * 1024 * 1024 # 16GB max file size or 16 * 1024 * 1024: 16MB
 ALLOWED_EXTENSIONS = {
-    'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'doc', 'docx', 'zip', 'rar', 'jfif', 'pptx'
+    'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'doc', 'docx', 'zip', 'rar', 'jfif', 'pptx', 'xlsx', 'json', 'csv'
     }
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
