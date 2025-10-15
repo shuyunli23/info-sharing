@@ -7,18 +7,18 @@ A simple file and text upload/download system with a Python backend and a React 
 ```
 info-sharing-app/
 ├── backend/
-│   ├── pyproject.toml
 │   ├── app.py
+│   ├── pyproject.toml
 │   ├── uploads/
 │   └── texts/
 └── frontend/
     ├── package.json
-    ├── src/
-    │   ├── App.js
-    │   ├── App.css
-    │   ├── components/
-    │   │   ├── FileSharing.js
-    │   │   └── TextSharing.js
+    └── src/
+        ├── App.js
+        ├── App.css
+        └── components/
+            ├── FileSharing.js
+            └── TextSharing.js
 ```
 
 ## Backend Setup
@@ -78,6 +78,8 @@ Start-Process powershell "cd backend; .venv\Scripts\activate; python app.py" ; S
 macOS / Linux:
 ```bash
 ( cd backend && source .venv/bin/activate && python app.py) & ( cd frontend && npm start )
+# log
+( cd backend && source .venv/bin/activate && python app.py > backend.log 2>&1 ) & ( cd frontend && npm start )
 ```
 
 
