@@ -12,8 +12,10 @@ CORS(app)  # Enable CORS for all routes
 # Configuration
 UPLOAD_FOLDER = 'uploads'
 TEXT_FOLDER = 'texts'
-MAX_FILE_SIZE = 16 * 1024 * 1024  # 16MB max file size
-ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'doc', 'docx', 'zip', 'rar', 'jfif'}
+MAX_FILE_SIZE = 16 * 1024 * 1024 * 1024 # 16GB max file size or 16 * 1024 * 1024: 16MB
+ALLOWED_EXTENSIONS = {
+    'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'doc', 'docx', 'zip', 'rar', 'jfif', 'pptx'
+    }
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['TEXT_FOLDER'] = TEXT_FOLDER
