@@ -1,0 +1,5 @@
+__pycache__/
+.venv/
+file_text_sharing_app.egg-info/
+texts/
+uploads/
